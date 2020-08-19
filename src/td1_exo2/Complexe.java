@@ -34,17 +34,19 @@ public class Complexe {
         partieImaginnaire = pImag;
     }
 
-    void tostring(){
-        System.out.println(getPReel()+" + "+getPImaginnaire()+"i");
+    void tostring() {
+        System.out.println(getPReel() + " + " + getPImaginnaire() + "i");
     }
-    static void Ajouter(Complexe c1,Complexe c2){
-        double nReel=c1.partieReel+c2.partieReel;
-        double nImaginaire=c1.partieImaginnaire+c2.partieImaginnaire;
-        System.out.println(nReel+" + "+nImaginaire+"i");
+
+    static void Ajouter(Complexe c1, Complexe c2) {
+        double nReel = c1.partieReel + c2.partieReel;
+        double nImaginaire = c1.partieImaginnaire + c2.partieImaginnaire;
+        System.out.println(nReel + " + " + nImaginaire + "i");
     }
-    static void Sustraire(Complexe c1,Complexe c2){
-        double nReel=(c1.partieReel*c2.partieReel)-(c1.partieImaginnaire*c2.partieImaginnaire);
-        double nImaginaire=(c1.partieReel*c2.partieImaginnaire)+(c2.partieReel*c1.partieImaginnaire);
-        System.out.println(nReel+" + "+nImaginaire+"i");
+
+    static void Sustraire(Complexe c1, Complexe c2) {
+        double nReel = (c1.partieReel * c2.partieReel) - (c1.partieImaginnaire * c2.partieImaginnaire);
+        double nImaginaire = (c1.partieReel * c2.partieImaginnaire) + (c2.partieReel * c1.partieImaginnaire);
+        System.out.println(nReel + " + " + nImaginaire + "i");
     }
 }
