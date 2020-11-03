@@ -17,8 +17,12 @@ public class Rectangle {
     }
     //get
     double getLong(){
+    if(longeur>=0){
         return longeur;
+      }else{
+        return -longeur;
     }
+   }
     double getLarg(){
         return largueur;
     }
